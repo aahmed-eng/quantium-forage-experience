@@ -1,7 +1,7 @@
 import csv
 
 
-with open(f'data/daily_sales_data.csv', 'r') as file:
+with open('data/daily_sales_data.csv', 'r') as file:
     with open('final_sales_data.csv', 'w') as file2:
         file2.write('sales,date,region\n')
         reader = csv.reader(file, delimiter=',')
